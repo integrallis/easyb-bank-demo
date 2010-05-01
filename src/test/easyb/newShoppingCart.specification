@@ -1,0 +1,9 @@
+import ShoppingCart
+
+before "create a new shopping cart for each spec", {
+    cart = new ShoppingCart()
+}
+
+it "should be empty when created", {
+    cart.itemCount.shouldBe 0
+}           
